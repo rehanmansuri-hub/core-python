@@ -1,26 +1,13 @@
-number = 153
+
+number = 404
 n = number
 sum = 0
 rem = 0
 while n > 0:
-    r = n % 10
-    sum = sum+r*r*r
-    n = n // 10
+    rem = n % 10
+    sum = sum*10+rem
+    n = n//10
 if sum == number:
-    print("amstrong number",number)
+    print("palindrome number",number)
 else:
-    print("not arms",number)
-
-
-number = 5132
-n = number
-sum = 0
-rem = 0
-while n > 0:
-    r = n % 10
-    sum = sum+r*r*r
-    n = n // 10
-if sum == number:
-    print("amstrong number",number)
-else:
-    print("not amstrong number",number)
+    print("palindrome number",number)
